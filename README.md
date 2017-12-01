@@ -9,7 +9,7 @@ It include:
 
 So, let's suppose you want to create a new module, you need to clone this repository and execute:
 ```bash
-npm install;
+npm install
 gulp watch_to_build_and_execute
 ```
 
@@ -55,7 +55,7 @@ Available commands:
 - watch_to_build_and_execute
 - build
 - run_with_npm
-- 
+
 
 Test
 --------------
