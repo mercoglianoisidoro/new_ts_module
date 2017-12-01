@@ -1,0 +1,22 @@
+{
+  "name": "new_module",
+  "version": "1.0.0",
+  "description": "snippet for a new js module written in typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "compileAndRun": "npm run build && npm run exec",
+    "exec": "nodejs dist/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mercogliano Isidoro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-run": "^1.7.1",
+    "gulp-typescript": "^3.2.3",
+    "typescript": "^2.6.2"
+  }
+}
