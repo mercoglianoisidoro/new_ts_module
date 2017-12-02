@@ -5,7 +5,7 @@ Snippet for creating a new javascript module using typescript<br>
 It include:
 - typescript configs
 - gulp utility to wath file
-
+- visual studio code configuration to debug typescript [see more detail in nexts chapter](#debug-in-visual-code)
 
 So, let's suppose you want to create a new module, you need to clone this repository and execute:
 ```bash
@@ -57,10 +57,30 @@ Available commands:
 - run_with_npm
 
 
-Test
+
+Debug in Visual Code
+==============
+
+
+Before starting
 --------------
+
+You need to install:
+- ts-node (npm install -g ts-node)
+
+for more information see [HERE](https://github.com/TypeStrong/ts-node)
+
+
+How to use
+--------------
+All configuration are already committed!
+
+
+Test
+==============
 TODO:
 
 ```bash
 npm test
 ```
+
