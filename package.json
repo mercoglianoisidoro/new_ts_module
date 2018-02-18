@@ -9,15 +9,20 @@
     "compileAndRun": "npm run build && npm run exec",
     "exec": "nodejs dist/index.js",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register test/**/*.ts"
   },
   "author": "Mercogliano Isidoro",
   "license": "ISC",
   "devDependencies": {
+    "@types/chai": "^4.1.2",
+    "@types/mocha": "^2.2.48",
+    "chai": "^4.1.2",
     "gulp": "^3.9.1",
     "gulp-run": "^1.7.1",
-    "gulp-typescript": "^3.2.3",
+    "gulp-typescript": "^3.2.4",
+    "mocha": "^5.0.1",
     "ts-node": "^4.1.0",
     "typescript": "^2.6.2"
-  }
+  },
+  "dependencies": {}
 }

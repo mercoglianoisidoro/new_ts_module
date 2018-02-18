@@ -11,6 +11,21 @@ gulp.task("build", function () {
         .js.pipe(gulp.dest("dist"));
 });
 
+
+gulp.task('test_with_npm', function () {
+    return run('npm run test').exec()
+        .pipe(gulp.dest('output'));
+});
+
+gulp.task('watch_to_test', ["test_with_npm"], function () {
+    gulp.watch(
+        [__dirname + '/src/**/*',
+        __dirname + '/test/**/*',
+        __dirname + '/index.ts'],
+        ["test_with_npm"]);
+})
+
+
 gulp.task('run_with_npm', ["build"], function () {
     return run('npm run exec').exec()
         .pipe(gulp.dest('output'))

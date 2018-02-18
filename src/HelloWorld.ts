@@ -5,4 +5,8 @@ export class HelloWorld{
          "Hello World!"
      );
  }
+
+ sayHello(){
+     return "Hello";
+ }
 }
