@@ -21,6 +21,9 @@ You need to install:
 - nodejs
 - npm
 - typescript
+- ts-node (optional but it is needed to execture some npm commands)
+
+
 
 If you want to use gulp:
 - gulp (npm install -g gulp-cli)
@@ -36,15 +39,25 @@ npm run build
 ```
 
 
-Use module with npm
+Use module with npm and nodejs
 --------------
 
-You need npm installed in you system
+You need npm installed in you system, and to have already compites the module
 
 ```bash
 npm run exec
 ```
 
+
+
+Use module with ts-node
+--------------
+
+You can use ts-node (without compiling)
+
+```bash
+npm run tsnode_exec
+```
 
 
 Use gulp
@@ -55,7 +68,22 @@ Available commands:
 - watch_to_build_and_execute
 - build
 - run_with_npm
+- test_with_npm //it use ts-node
+- watch_to_test //it use ts-node
 
+
+
+Test
+--------------
+
+You can use gulp (see previous section), or: 
+```bash
+npm run test
+```
+Watching file and execute test:
+```bash
+npm run watch_for_testing
+```
 
 
 Debug in Visual Code
@@ -74,13 +102,4 @@ for more information see [HERE](https://github.com/TypeStrong/ts-node)
 How to use
 --------------
 All configuration are already committed!
-
-
-Test
-==============
-TODO:
-
-```bash
-npm test
-```
 
