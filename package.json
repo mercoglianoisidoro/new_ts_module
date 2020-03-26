@@ -26,6 +26,6 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "gulp-mocha": "^5.0.0"
+    "gulp-mocha": "^7.0.0"
   }
 }
